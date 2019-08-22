@@ -4,15 +4,16 @@
 #
 
 # add some values
-./pmemkv /pmem/kvfile firstname spider
-./pmemkv /pmem/kvfile lastname man
+./pmemkv /pmem/kvfile bach 1685-1750
+./pmemkv /pmem/kvfile mozart 1756-1791
 
 # print a value
-./pmemkv /pmem/kvfile firstname
+./pmemkv /pmem/kvfile bach
 
 # add some more
-./pmemkv /pmem/kvfile city gotham
-./pmemkv /pmem/kvfile relative "aunt may"
+./pmemkv /pmem/kvfile beethoven 1770-1827
+./pmemkv /pmem/kvfile brahms 1833-1897
+./pmemkv /pmem/kvfile haydn 1732-1809
 
 # print all k-v pairs in kvfile
 ./pmemkv /pmem/kvfile
