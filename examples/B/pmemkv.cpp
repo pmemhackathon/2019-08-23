@@ -47,8 +47,6 @@ int main(int argc, char *argv[]) {
 	} else if (argc == 3) {
 
 		// lookup the given key and print the value
-		std::string value;
-
 		auto ret = kv->get(argv[2], [&](string_view value) {
 			cout << argv[2] << "=\"" << value.data() << "\"" << endl;
 		});
